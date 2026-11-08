@@ -13,7 +13,7 @@ data class DeviceInfo(
         get() = if (hostname.isNotBlank() && hostname != ip) hostname else ip
 
     val portSummary: String
-        get() = if (openPorts.isEmpty()) "mDNS" else openPorts.joinToString(", ") { PortCatalog.label(it) }
+        get() = openPorts.joinToString(", ") { PortCatalog.label(it) }
 
     val kind: DeviceKind
         get() {

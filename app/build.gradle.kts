@@ -24,8 +24,8 @@ android {
         applicationId = "com.example.lan_scanner"
         minSdk = 21
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "2.0.0"
 
         // 仅保留中/英文资源，裁掉依赖库内其余语言
         resourceConfigurations.addAll(listOf("zh", "en"))
@@ -117,4 +117,6 @@ dependencies {
 
     // ui-tooling / ui-tooling-preview 只用于 IDE 预览，不进入 release（工程内无 @Preview）
     debugImplementation("androidx.compose.ui:ui-tooling")
+
+    testImplementation("junit:junit:4.13.2")
 }

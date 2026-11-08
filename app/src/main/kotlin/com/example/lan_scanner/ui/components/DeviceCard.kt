@@ -42,11 +42,9 @@ import com.example.lan_scanner.data.DeviceInfo
 import com.example.lan_scanner.data.PortCatalog
 import com.example.lan_scanner.ui.theme.BrandBlue
 import com.example.lan_scanner.ui.theme.BrandViolet
-import com.example.lan_scanner.ui.theme.OutlineSoft
 import com.example.lan_scanner.ui.theme.SurfaceSoft
 import com.example.lan_scanner.ui.theme.TextPrimary
 import com.example.lan_scanner.ui.theme.TextSecondary
-import com.example.lan_scanner.ui.theme.TextTertiary
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -118,9 +116,9 @@ fun DeviceCard(
                         }
                     }
 
-                    Spacer(Modifier.height(7.dp))
-
+                    // 对齐原版：无开放端口时 subtitle 为空，不显示任何说明文字
                     if (device.openPorts.isNotEmpty()) {
+                        Spacer(Modifier.height(7.dp))
                         FlowRow(
                             horizontalArrangement = Arrangement.spacedBy(5.dp),
                             verticalArrangement = Arrangement.spacedBy(5.dp),
@@ -128,21 +126,6 @@ fun DeviceCard(
                             device.openPorts.forEach { port ->
                                 PortChip(port = port)
                             }
-                        }
-                    } else {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Box(
-                                Modifier
-                                    .size(6.dp)
-                                    .clip(RoundedCornerShape(3.dp))
-                                    .background(TextTertiary)
-                            )
-                            Spacer(Modifier.width(6.dp))
-                            Text(
-                                text = "mDNS 发现 · 无开放端口",
-                                fontSize = 11.sp,
-                                color = TextSecondary,
-                            )
                         }
                     }
                 }

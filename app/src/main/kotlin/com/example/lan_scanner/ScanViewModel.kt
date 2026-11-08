@@ -119,14 +119,14 @@ class ScanViewModel(application: Application) : AndroidViewModel(application) {
                 scanning = true,
                 scanned = 0,
                 total = 0,
-                statusText = "正在初始化扫描…",
+                statusText = "正在扫描…",
             )
         }
 
         scanJob?.cancel()
         scanJob = viewModelScope.launch {
             try {
-                scanner.scan(cidr, ports, app).collect { progress ->
+                scanner.scan(cidr, ports).collect { progress ->
                     _uiState.update { current ->
                         val devices = if (progress.newDevice != null) {
                             listOf(progress.newDevice) + current.devices.filterNot { d ->
@@ -136,7 +136,7 @@ class ScanViewModel(application: Application) : AndroidViewModel(application) {
                             current.devices
                         }
                         current.copy(
-                            scanned = progress.scanned,
+                            scanned = maxOf(current.scanned, progress.scanned),
                             total = progress.total,
                             devices = devices,
                             statusText = "扫描中 ${progress.scanned} / ${progress.total}",
