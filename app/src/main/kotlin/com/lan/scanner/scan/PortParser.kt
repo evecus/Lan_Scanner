@@ -1,4 +1,4 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
 sealed interface PortParseResult {
     /** 输入为空，使用默认端口 */

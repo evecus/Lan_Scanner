@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Computer
@@ -12,13 +12,13 @@ import androidx.compose.material.icons.rounded.Storage
 import androidx.compose.material.icons.rounded.Tv
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.lan_scanner.data.DeviceKind
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandCyan
-import com.example.lan_scanner.ui.theme.BrandViolet
-import com.example.lan_scanner.ui.theme.DangerRed
-import com.example.lan_scanner.ui.theme.OnlineGreen
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.data.DeviceKind
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandCyan
+import com.lan.scanner.ui.theme.BrandViolet
+import com.lan.scanner.ui.theme.DangerRed
+import com.lan.scanner.ui.theme.OnlineGreen
+import com.lan.scanner.ui.theme.TextSecondary
 
 fun iconFor(kind: DeviceKind): ImageVector = when (kind) {
     DeviceKind.Desktop -> Icons.Rounded.Computer

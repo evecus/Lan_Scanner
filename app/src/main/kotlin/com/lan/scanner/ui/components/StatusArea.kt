@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -33,15 +33,15 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lan_scanner.data.ScanUiState
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandCyan
-import com.example.lan_scanner.ui.theme.OnlineGreen
-import com.example.lan_scanner.ui.theme.OnlineGreenPale
-import com.example.lan_scanner.ui.theme.SurfaceSoft
-import com.example.lan_scanner.ui.theme.SurfaceWhite
-import com.example.lan_scanner.ui.theme.TextPrimary
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.data.ScanUiState
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandCyan
+import com.lan.scanner.ui.theme.OnlineGreen
+import com.lan.scanner.ui.theme.OnlineGreenPale
+import com.lan.scanner.ui.theme.SurfaceSoft
+import com.lan.scanner.ui.theme.SurfaceWhite
+import com.lan.scanner.ui.theme.TextPrimary
+import com.lan.scanner.ui.theme.TextSecondary
 
 @Composable
 fun StatusArea(state: ScanUiState, modifier: Modifier = Modifier) {

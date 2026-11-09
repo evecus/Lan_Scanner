@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -51,15 +51,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lan_scanner.data.PortCatalog
-import com.example.lan_scanner.data.ScanUiState
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandBluePale
-import com.example.lan_scanner.ui.theme.OutlineSoft
-import com.example.lan_scanner.ui.theme.SurfaceSoft
-import com.example.lan_scanner.ui.theme.SurfaceWhite
-import com.example.lan_scanner.ui.theme.TextPrimary
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.data.PortCatalog
+import com.lan.scanner.data.ScanUiState
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandBluePale
+import com.lan.scanner.ui.theme.OutlineSoft
+import com.lan.scanner.ui.theme.SurfaceSoft
+import com.lan.scanner.ui.theme.SurfaceWhite
+import com.lan.scanner.ui.theme.TextPrimary
+import com.lan.scanner.ui.theme.TextSecondary
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -280,9 +280,9 @@ private fun ScanButton(scanning: Boolean, onClick: () -> Unit) {
     )
 
     val brush = if (scanning) {
-        Brush.horizontalGradient(com.example.lan_scanner.ui.theme.StopGradient)
+        Brush.horizontalGradient(com.lan.scanner.ui.theme.StopGradient)
     } else {
-        Brush.horizontalGradient(com.example.lan_scanner.ui.theme.BrandGradient)
+        Brush.horizontalGradient(com.lan.scanner.ui.theme.BrandGradient)
     }
 
     Box(

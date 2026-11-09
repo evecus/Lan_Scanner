@@ -1,4 +1,4 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
 /**
  * CIDR 网段解析：把 "192.168.1.0/24" 展开为待扫描的主机 IP 列表。

@@ -1,4 +1,4 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
 import android.content.Context
 import android.net.wifi.WifiManager

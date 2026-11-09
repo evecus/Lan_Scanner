@@ -1,7 +1,7 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
-import com.example.lan_scanner.data.PortCatalog
-import com.example.lan_scanner.data.ScanProgress
+import com.lan.scanner.data.PortCatalog
+import com.lan.scanner.data.ScanProgress
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow

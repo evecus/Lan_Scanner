@@ -1,15 +1,15 @@
-package com.example.lan_scanner
+package com.lan.scanner
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.lan_scanner.data.DeviceInfo
-import com.example.lan_scanner.data.PortCatalog
-import com.example.lan_scanner.data.ScanUiState
-import com.example.lan_scanner.scan.NetworkUtils
-import com.example.lan_scanner.scan.PortParseResult
-import com.example.lan_scanner.scan.PortParser
-import com.example.lan_scanner.scan.ScannerService
+import com.lan.scanner.data.DeviceInfo
+import com.lan.scanner.data.PortCatalog
+import com.lan.scanner.data.ScanUiState
+import com.lan.scanner.scan.NetworkUtils
+import com.lan.scanner.scan.PortParseResult
+import com.lan.scanner.scan.PortParser
+import com.lan.scanner.scan.ScannerService
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel

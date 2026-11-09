@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -22,8 +22,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandCyan
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandCyan
 
 /** 呼吸式雷达波纹，扫描时持续扩散，空闲时静止显示中心图标。 */
 @Composable

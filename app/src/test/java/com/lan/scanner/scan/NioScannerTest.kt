@@ -1,6 +1,6 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
-import com.example.lan_scanner.data.DeviceInfo
+import com.lan.scanner.data.DeviceInfo
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue

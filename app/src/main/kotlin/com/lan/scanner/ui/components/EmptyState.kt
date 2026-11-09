@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -13,8 +13,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lan_scanner.ui.theme.TextPrimary
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.ui.theme.TextPrimary
+import com.lan.scanner.ui.theme.TextSecondary
 
 @Composable
 fun EmptyState(scanning: Boolean, modifier: Modifier = Modifier) {

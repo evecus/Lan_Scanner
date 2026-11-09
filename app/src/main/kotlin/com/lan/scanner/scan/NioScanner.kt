@@ -1,6 +1,6 @@
-package com.example.lan_scanner.scan
+package com.lan.scanner.scan
 
-import com.example.lan_scanner.data.DeviceInfo
+import com.lan.scanner.data.DeviceInfo
 import java.net.InetSocketAddress
 import java.nio.channels.SelectionKey
 import java.nio.channels.Selector

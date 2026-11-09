@@ -1,4 +1,4 @@
-package com.example.lan_scanner.data
+package com.lan.scanner.data
 
 /** 设备类型，用于 UI 层选择图标（data 层不依赖 Compose）。 */
 enum class DeviceKind { Desktop, Linux, Storage, Printer, Phone, Iot, Router, Web, Generic }

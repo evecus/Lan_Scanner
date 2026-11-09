@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui
+package com.lan.scanner.ui
 
 import android.content.Intent
 import androidx.compose.animation.core.animateFloatAsState
@@ -47,19 +47,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.lan_scanner.ScanViewModel
-import com.example.lan_scanner.UiEvent
-import com.example.lan_scanner.ui.components.DeviceCard
-import com.example.lan_scanner.ui.components.EmptyState
-import com.example.lan_scanner.ui.components.InputPanel
-import com.example.lan_scanner.ui.components.RadarPulse
-import com.example.lan_scanner.ui.components.StatusArea
-import com.example.lan_scanner.ui.theme.Background
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandViolet
-import com.example.lan_scanner.ui.theme.SurfaceWhite
-import com.example.lan_scanner.ui.theme.TextPrimary
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.ScanViewModel
+import com.lan.scanner.UiEvent
+import com.lan.scanner.ui.components.DeviceCard
+import com.lan.scanner.ui.components.EmptyState
+import com.lan.scanner.ui.components.InputPanel
+import com.lan.scanner.ui.components.RadarPulse
+import com.lan.scanner.ui.components.StatusArea
+import com.lan.scanner.ui.theme.Background
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandViolet
+import com.lan.scanner.ui.theme.SurfaceWhite
+import com.lan.scanner.ui.theme.TextPrimary
+import com.lan.scanner.ui.theme.TextSecondary
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

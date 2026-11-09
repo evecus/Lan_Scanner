@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.components
+package com.lan.scanner.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -38,13 +38,13 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.lan_scanner.data.DeviceInfo
-import com.example.lan_scanner.data.PortCatalog
-import com.example.lan_scanner.ui.theme.BrandBlue
-import com.example.lan_scanner.ui.theme.BrandViolet
-import com.example.lan_scanner.ui.theme.SurfaceSoft
-import com.example.lan_scanner.ui.theme.TextPrimary
-import com.example.lan_scanner.ui.theme.TextSecondary
+import com.lan.scanner.data.DeviceInfo
+import com.lan.scanner.data.PortCatalog
+import com.lan.scanner.ui.theme.BrandBlue
+import com.lan.scanner.ui.theme.BrandViolet
+import com.lan.scanner.ui.theme.SurfaceSoft
+import com.lan.scanner.ui.theme.TextPrimary
+import com.lan.scanner.ui.theme.TextSecondary
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

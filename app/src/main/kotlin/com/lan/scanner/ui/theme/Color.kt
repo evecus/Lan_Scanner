@@ -1,4 +1,4 @@
-package com.example.lan_scanner.ui.theme
+package com.lan.scanner.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
