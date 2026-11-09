@@ -102,7 +102,9 @@ android {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2024.06.00")
+    // BOM >= 2024.09.00 (Compose UI 1.7+)：LocalLifecycleOwner 迁移到 lifecycle 库后，
+    // 旧版 UI 1.6.x 不会提供新的 LocalLifecycleOwner，配合 lifecycle-runtime-compose 2.8.x 会闪退
+    val composeBom = platform("androidx.compose:compose-bom:2024.09.00")
     implementation(composeBom)
 
     implementation("androidx.core:core-ktx:1.13.1")
